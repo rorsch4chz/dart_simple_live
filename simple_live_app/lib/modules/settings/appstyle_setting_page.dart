@@ -120,7 +120,7 @@ class AppstyleSettingPage extends GetView<AppSettingsController> {
                                     color: e,
                                     borderRadius: AppStyle.radius4,
                                     border: Border.all(
-                                      color: Colors.grey.withOpacity(.2),
+                                      color: Colors.grey.withAlpha(50),
                                       width: 1,
                                     ),
                                   ),
@@ -150,3 +150,15 @@ class AppstyleSettingPage extends GetView<AppSettingsController> {
     );
   }
 }
+
+// extension ColorExt on Color {
+//   static int _floatToInt8(double x) {
+//     return (x * 255.0).round() & 0xff;
+//   }
+
+//   int get v =>
+//       _floatToInt8(a) << 24 |
+//       _floatToInt8(r) << 16 |
+//       _floatToInt8(g) << 8 |
+//       _floatToInt8(b) << 0;
+// }
